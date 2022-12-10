@@ -1,38 +1,59 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.conteiner__calendare-block *{
+  margin: 0;
+}
+.conteiner__calendare-block{
+  width: 301px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.current__calendare-block{
+  width: 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.current__calendare-block > *:first-child, 
+.current__calendare-block > *:last-child{
+  background-color: rgb(29, 21, 83);
+  padding: 15px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-column-block{
+  display: flex;
+  flex-direction: column
+}
+
+.middle-current__calendare-block{
+  background-color: rgb(46, 37, 106);
+  width: 100%;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.middle-current__calendare-block > *:last-child{
+  color:rgba(212, 207, 247, 0.732);
+}
+
+.conteiner__calendare-block table{
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.opacity-text{
+  opacity: 0.35;
+}
+
+.dark-background{
+  background-color: #284B72;
+}
+
+.ui-datepicker-week-end{
+  background-color: #b4cbe5;
+}
+
+.ui-datepicker-today{
+  background-color: #284B72;
+  color: white;
 }
